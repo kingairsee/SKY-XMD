@@ -28,13 +28,13 @@ const {
 } = require("node:fs/promises")
 router.get('/', async (req, res) => {
 	const id = makeid();
-	async function STAR_MD_QR_CODE() {
+	async function SKY_MD_QR_CODE() {
 		const {
 			state,
 			saveCreds
 		} = await useMultiFileAuthState('./temp/' + id)
 		try {
-			let Qr_Code_By_Malvin_Tech = Malvin_Tech({
+			let Qr_Code_By_Airse_Tech = Airsee_Tech({
 				auth: state,
 				printQRInTerminal: false,
 				logger: pino({
