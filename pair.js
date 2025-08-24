@@ -38,7 +38,7 @@ router.get('/', async (req, res) => {
             if (!Pair_Code_By_Malvin_Tech.authState.creds.registered) {
                 await delay(1500);
                 num = num.replace(/[^0-9]/g, '');
-                const code = await Pair_Code_By_Malvin_Tech.requestPairingCode(num);
+                const code = await Pair_Code_By_Airsee_Tech.requestPairingCode(num);
                 if (!res.headersSent) {
                     await res.send({ code });
                 }
